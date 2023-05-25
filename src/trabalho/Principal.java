@@ -98,7 +98,7 @@ public class Principal {
 		}
 		
 		System.out.println("Encerrando Programa....");	
-		System.out.println("Elaborado por Julio Cesar Danini RU 4234544");
+		System.out.println("Elaborado por Julio Cesar Danini");
 
 	
 		
