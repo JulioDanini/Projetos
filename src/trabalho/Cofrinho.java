@@ -45,7 +45,9 @@ public class Cofrinho{
 		Dolar dolar = new Dolar(0);
 		System.out.println("Cotação do Dolar: " );  dolar.info();
 		Euro euro = new Euro(0);
-		System.out.println("Cotação do Euro: " );  euro.info();		
+		System.out.println("Cotação do Euro: " );  euro.info();
+		Bitcoin bitcoin = new Bitcoin(0);
+		System.out.println("Cotação do Bitcoin: " );  bitcoin.info();	
 			
 				}
 

@@ -28,13 +28,14 @@ public class Principal {
 			switch(menu) {
 			case 1: // ESTA PARTE DO CÓDIGO ADICIONA MOEDA EM UMA LISTA.
 				tipoMoeda=0;
-				while (tipoMoeda > 3 || tipoMoeda<=0) {
+				while (tipoMoeda > 4 || tipoMoeda<=0) {
 					System.out.println("1 - Dolar");
 					System.out.println("2 - Euro");
 					System.out.println("3 - Real");
+					System.out.println("4 - Bitcoin");
 					tipoMoeda = entrada.nextInt();
 				}
-					System.out.println("Insira o valor da Moeda.");
+					System.out.println("Insira a quantidade.");
 						double valor = entrada.nextDouble(); 						
 						Moeda moeda = null;
 						if (tipoMoeda==1) {
@@ -45,20 +46,24 @@ public class Principal {
 						}
 						if (tipoMoeda==3) {
 							moeda = new Real(valor);
-						}						
+						}
+						if (tipoMoeda==4) {
+							moeda = new Bitcoin(valor);
+						}
 						cofrinho.adicionar(moeda);
 						System.out.println("##Moeda adicionada com Sucesso##");
 						
 				break;
 			case 2: // ESTA PARTE DO CÓDIGO ADICIONA MOEDA EM UMA LISTA.
 				tipoMoeda=0;
-				while (tipoMoeda > 3 || tipoMoeda<=0) {
+				while (tipoMoeda > 4 || tipoMoeda<=0) {
 					System.out.println("1 - Dolar");
 					System.out.println("2 - Euro");
 					System.out.println("3 - Real");
+					System.out.println("4 - Bitcoin");
 					tipoMoeda = entrada.nextInt();
 				}
-					System.out.println("Insira o valor da Moeda.");
+					System.out.println("Insira a quantidade.");
 						valor = entrada.nextDouble();	
 						
 						moeda = null;
@@ -70,7 +75,10 @@ public class Principal {
 						}
 						if (tipoMoeda==3) {
 							moeda = new Real(valor);
-						}						
+						}
+						if (tipoMoeda==4) {
+							moeda = new Bitcoin(valor);
+						}
 						cofrinho.remover(moeda);
 						System.out.println("##Moeda removida com Sucesso##");
 				break;
